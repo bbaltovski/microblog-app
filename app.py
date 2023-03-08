@@ -27,6 +27,6 @@ def create_app():
             )
             for entry in app.db.entries.find({})
         ]
-        return render_template("home.html", entries=entries_with_date)
+        return render_template("index.html", entries=entries_with_date)
 
     return app
